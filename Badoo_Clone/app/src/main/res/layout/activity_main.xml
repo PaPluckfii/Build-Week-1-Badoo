@@ -7,6 +7,34 @@
     tools:context=".MainActivity"
     android:background="@color/background_grey">
 
+    <ImageView
+        android:id="@+id/mainActivity_ivBadooLogo"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_5"
+        android:src="@drawable/logo_badoo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/mainActivity_ivPurpleHeart"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="212dp"
+        android:src="@drawable/heart_icon_purple_badoo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_ivBadooLogo" />
+
+    <ImageView
+        android:id="@+id/mainActivity_ivPinkHeart"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/heart_icon_pink_badoo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mainActivity_ivPurpleHeart"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_ivBadooLogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
