@@ -7,12 +7,16 @@
     tools:context=".MainActivity"
     android:background="@color/background_grey">
 
-    <ImageView
-        android:id="@+id/mainActivity_ivBadooLogo"
-        android:layout_width="@dimen/dp_100"
-        android:layout_height="@dimen/dp_50"
-        android:layout_marginTop="@dimen/dp_5"
-        android:src="@drawable/logo_badoo_purple"
+    <TextView
+        android:id="@+id/mainActivity_tvBadooLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa"
+        android:includeFontPadding="true"
+        android:text="@string/badoo"
+        android:textColor="@color/theme_purple"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,20 +25,133 @@
         android:id="@+id/mainActivity_ivPurpleHeart"
         android:layout_width="@dimen/dp_60"
         android:layout_height="@dimen/dp_60"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/heart_icon_purple_badoo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainActivity_ivBadooLogo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_tvHeyYouAre"/>
 
     <ImageView
         android:id="@+id/mainActivity_ivPinkHeart"
         android:layout_width="@dimen/dp_80"
         android:layout_height="@dimen/dp_80"
-        android:layout_marginTop="144dp"
         android:src="@drawable/heart_icon_pink_badoo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/mainActivity_ivPurpleHeart"
-        app:layout_constraintTop_toBottomOf="@+id/mainActivity_ivBadooLogo" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_tvHeyYouAre"/>
+
+    <TextView
+        android:id="@+id/mainActivity_tvTermsOfServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/terms_of_service"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mainActivity_tvFacebookPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/facebook_privacy"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_tvTermsOfServices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mainActivity_tvHeyYouAre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heu_you_are"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_tvFacebookPrivacy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/mainActivity_btnMale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:background="@drawable/rectangle_white"
+        android:text="@string/male"
+        android:textColor="@color/black"
+        android:layout_marginEnd="@dimen/dp_5"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_btnMoreChoices"
+        app:layout_constraintEnd_toStartOf="@id/mainActivity_btnFemale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainActivity_tvHeyYouAre" />
+
+    <Button
+        android:id="@+id/mainActivity_btnFemale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/rectangle_white"
+        android:text="@string/female"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dp_5"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_btnMoreChoices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mainActivity_btnMale"
+        app:layout_constraintTop_toBottomOf="@id/mainActivity_tvHeyYouAre" />
+
+
+    <Button
+        android:id="@+id/mainActivity_btnMoreChoices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/rectangle_white"
+        android:text="@string/more_choices"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_tvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainActivity_btnMale" />
+
+    <TextView
+        android:id="@+id/mainActivity_tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_btnFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainActivity_btnMoreChoices" />
+
+    <Button
+        android:id="@+id/mainActivity_btnFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/rectangle_purple"
+        android:text="@string/continue_with_facebook"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/logo_facebook"
+        android:paddingStart="@dimen/dp_40"
+        android:paddingEnd="@dimen/dp_40"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_tvSignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainActivity_tvOr" />
+
+    <TextView
+        android:id="@+id/mainActivity_tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textColor="@color/theme_purple"
+        app:layout_constraintBottom_toTopOf="@id/mainActivity_tvFacebookPrivacy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainActivity_btnFacebook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
