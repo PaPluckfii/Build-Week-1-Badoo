@@ -1,10 +1,20 @@
 <resources>
+
     <string name="app_name">Badoo_Clone</string>
+    <string name="badoo">badoo</string>
+    <string name="heu_you_are">Hey! You are ..</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="more_choices">More choices</string>
+    <string name="or">OR</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="sign_in">Sign in</string>
+    <string name="facebook_privacy">Do not worry! We never post on Facebook</string>
+    <string name="terms_of_service">Privacy.Terms of Service</string>
     <string name="tvLoginScreen_EmailOrMobile">Email or mobile</string>
     <string name="tvLoginScreen_Password">Password</string>
     <string name="Button_LoginActivity_SignIn">Sign in</string>
     <string name="tvLoginActivity_ForgotPassword">Forgot Password?</string>
     <string name="tvLoginActivity_Terms">Privacy ∙ Terms of Service</string>
-
 
 </resources>
