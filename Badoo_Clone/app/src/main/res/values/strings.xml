@@ -16,5 +16,8 @@
     <string name="Button_LoginActivity_SignIn">Sign in</string>
     <string name="tvLoginActivity_ForgotPassword">Forgot Password?</string>
     <string name="tvLoginActivity_Terms">Privacy ∙ Terms of Service</string>
+    <string name="tvProfileView_ProfileNameAndAge">Deepika , 24</string>
+    <string name="tvProfileView_ProfileHobbies">Singer</string>
+    <string name="tvProfileView_ProfileOtherDetails">Works at Masai School</string>
 
 </resources>
