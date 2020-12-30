@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Badoo_Clone">
-        <activity android:name=".MainPage_ProfileSelf"></activity>
+        <activity android:name=".SignUp_UploadPicture"></activity>
+        <activity android:name=".SignUp_Motive" />
+        <activity android:name=".SignUp_CommunityGuidlines" />
+        <activity android:name=".SignUp_Email" />
+        <activity android:name=".MainPage_ProfileSelf" />
         <activity android:name=".MainPage_Messages" />
         <activity android:name=".MainPage_ProfileView" />
         <activity android:name=".MainPage_ConnectInstantly" />

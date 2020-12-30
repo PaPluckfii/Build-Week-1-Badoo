@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_UploadPicture">
+
+    <TextView
+        android:id="@+id/signUpPicture_tvHead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/picture_time"
+        android:textSize="@dimen/sp_25"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_40"
+        />
+
+    <TextView
+        android:id="@+id/signUpPicture_tvHead2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPicture_tvHead1"
+        android:text="@string/need_a_photo"
+        android:textSize="@dimen/sp_25"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/signUpPicture_tvHead3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpPicture_tvHead2"
+        android:text="@string/badoo_text"
+        android:textSize="@dimen/sp_25"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/signUpUpload_btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_purple"
+        android:text="@string/Upload_photo"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

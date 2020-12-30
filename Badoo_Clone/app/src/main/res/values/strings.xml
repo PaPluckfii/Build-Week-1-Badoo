@@ -13,4 +13,40 @@
     <string name="facebook_privacy">Do not worry! We never post on Facebook</string>
     <string name="terms_of_service">Privacy.Terms of Service</string>
 
+    <string name="next_up">Next up, whats your name?</string>
+    <string name="user_name">This is how you will appear on Badoo</string>
+    <string name="Continue">Continue</string>
+    <string name="register_using_facebook">Register using Facebook</string>
+
+    <string name="whats_your_email">Whats your email?</string>
+    <string name="sign_up_with_phone_number">Sign up with phone number instead</string>
+    <string name="enter_email">Enter your email</string>
+
+    <string name="when_your_birthday">Hey! Whens your birthday?</string>
+    <string name="enter_birthday">Enter your birthday</string>
+    <string name="year_over_18">We need this to make sure you are over 18</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+
+    <string name="the_honesty_pledge">The Honesty Pledge</string>
+    <string name="honesty_quote">Dating is messy.Honestly is how we fight back.Badoo is a place where everyone can be real about who they are and what they are looking for.By being a part of our community,you agree to meet fellow members with openness and respect.</string>
+    <string name="community_guidlines">See our community guidlines</string>
+    <string name="i_accept">I accept</string>
+
+    <string name="what_do_you_honestly_want">What do you honestly want?</string>
+    <string name="dont_worry">Do not worry, you can always change this later!</string>
+    <string name="long_term_commitment">To make a long-term commitment</string>
+    <string name="what_happens">To see what happens</string>
+    <string name="chat_meet_new_people">To chat and meet new people</string>
+    <string name="To_date_seriously">To date seriously</string>
+    <string name="to_date">To date</string>
+    <string name="next">Next</string>
+
+    <string name="picture_time">Picture time!</string>
+    <string name="need_a_photo">You need a photo to use </string>
+    <string name="badoo_text">Badoo</string>
+    <string name="Upload_photo">Upload photo</string>
+
+
 </resources>

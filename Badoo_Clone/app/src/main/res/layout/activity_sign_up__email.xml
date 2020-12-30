@@ -4,45 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp_Name">
-
+    tools:context=".SignUp_Email">
     <TextView
-        android:id="@+id/signUpName_tvNextUp"
+        android:id="@+id/signUpEmail_tvWhatsYourEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/next_up"
+        android:text="@string/whats_your_email"
         android:textSize="@dimen/dp_25"
         android:layout_marginTop="@dimen/dp_40"
         android:textColor="@color/black"
         />
-   <TextView
-       android:id="@+id/signUpName_tvUserName"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintStart_toStartOf="parent"
-       android:layout_marginStart="@dimen/dp_20"
-       app:layout_constraintTop_toBottomOf="@id/signUpName_tvNextUp"
-       android:text="@string/user_name"
-       android:textColor="@color/theme_purple"
-       android:layout_marginTop="@dimen/dp_150"
-       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpEmail_tvWhatsYourEmail"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/sign_up_with_phone_number"
+        android:textColor="@color/theme_purple"
+        />
+    <TextView
+        android:id="@+id/signUpEmail_tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/signUpEmail_tvWhatsYourEmail"
+        android:text="@string/enter_email"
+        android:textColor="@color/theme_purple"
+        android:layout_marginTop="@dimen/dp_150"
+        />
     <EditText
-        android:id="@+id/signUpName_etUserName"
+        android:id="@+id/signUpEmail_etUserEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpName_tvUserName"
+        app:layout_constraintTop_toBottomOf="@id/signUpEmail_tvUserEmail"
         android:layout_marginStart="@dimen/dp_20"
         android:layout_marginEnd="@dimen/dp_20"
         />
 
-
     <TextView
-        android:id="@+id/signUpName_tvRegisterUsingFacebook"
+        android:id="@+id/signUpEmail_tvRegisterUsingFacebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,12 +62,12 @@
         android:layout_marginBottom="@dimen/dp_20"
         />
     <Button
-        android:id="@+id/signUpName_btnContinue"
+        android:id="@+id/signUpEmail_btnContinue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/signUpName_tvRegisterUsingFacebook"
+        app:layout_constraintBottom_toTopOf="@id/signUpEmail_tvRegisterUsingFacebook"
         android:background="@drawable/rectangle_purple"
         android:text="@string/Continue"
         android:textColor="@color/white"
@@ -67,5 +75,4 @@
         android:layout_marginEnd="@dimen/dp_20"
         android:layout_marginBottom="@dimen/dp_20"
         />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
