@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="theme_purple">#7000E3</color>
     <color name="background_grey">#E5E5E5</color>
+    <color name="tvLoginActivity_grey">#686B73</color>
 </resources>
