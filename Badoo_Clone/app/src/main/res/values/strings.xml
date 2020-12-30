@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Badoo_Clone</string>
+    <string name="tvLoginScreen_EmailOrMobile">Email or mobile</string>
+    <string name="tvLoginScreen_Password">Password</string>
+    <string name="Button_LoginActivity_SignIn">Sign in</string>
+    <string name="tvLoginActivity_ForgotPassword">Forgot Password?</string>
+    <string name="tvLoginActivity_Terms">Privacy ∙ Terms of Service</string>
+
+
 </resources>
