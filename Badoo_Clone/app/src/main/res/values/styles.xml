@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="LoginActivityEditTextStyle">
 
         <item name="android:layout_marginStart">@dimen/dp_20</item>
 
-        </style>
+    </style>
 </resources>

@@ -101,6 +101,22 @@
     <dimen name="dp_99">99dp</dimen>
     <dimen name="dp_100">100dp</dimen>
     <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_250">250dp</dimen>
+    <dimen name="dp_258">258dp</dimen>
+    <dimen name="dp_109">109dp</dimen>
+    <dimen name="dp_102">102dp</dimen>
+    <dimen name="dp_264">264dp</dimen>
+    <dimen name="dp_412">412dp</dimen>
+    <dimen name="dp_232">232dp</dimen>
+    <dimen name="dp_122">122dp</dimen>
+    <dimen name="dp_135">135dp</dimen>
+    <dimen name="dp_344">344dp</dimen>
+    <dimen name="dp_104">104dp</dimen>
+    <dimen name="dp_137">137dp</dimen>
+    <dimen name="dp_260">260dp</dimen>
+
+
+
 
 
     <dimen name="sp_1">1sp</dimen>

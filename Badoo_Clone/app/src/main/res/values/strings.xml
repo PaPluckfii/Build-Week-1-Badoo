@@ -5,6 +5,12 @@
     <string name="Button_LoginActivity_SignIn">Sign in</string>
     <string name="tvLoginActivity_ForgotPassword">Forgot Password?</string>
     <string name="tvLoginActivity_Terms">Privacy ∙ Terms of Service</string>
+    <string name="tvMainPage_messages_Matches">Matches</string>
+    <string name="tvMainPage_messages_Button_MessagesTxt">Messages</string>
+    <string name="tvMainPage_messages_Button_ActivityTxt">Activity</string>
+    <string name="tvMainPage_messages_Button_RecentFirstTxt">Recent first</string>
+    <string name="tvMainPage_message_BeforeHeart_Txt">It&apos;s just a matter of time until someone new likes you!</string>
+    <string name="tvMainPage_messages_BeforePurpleHeart_Logo_Txt">Welcome to Badoo💜It&apos;s so great to see you</string>
 
 
 </resources>
