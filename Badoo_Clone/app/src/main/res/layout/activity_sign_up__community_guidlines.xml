@@ -6,26 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".SignUp_CommunityGuidlines">
 
-<ImageView
-    android:id="@+id/signUpCommunity_imgHeart"
-    android:layout_width="@dimen/dp_150"
-    android:layout_height="@dimen/dp_150"
-    android:layout_marginStart="@dimen/dp_20"
-    android:src="@drawable/badoo_heart_smile"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintBottom_toTopOf="@id/signUpCommunity_tvHonestyPledge"
-    />
+    <ImageView
+        android:id="@+id/iv_Logo_Badoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_badoo_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/LoginActivity_Badoo_ShadowUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
+        android:background="@color/background_grey"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+
     <TextView
         android:id="@+id/signUpCommunity_tvHonestyPledge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/signUpCommunity_imgHeart"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
         android:text="@string/the_honesty_pledge"
-        android:textSize="@dimen/dp_25"
+        android:textSize="@dimen/sp_25"
         android:textColor="@color/black"
-        android:layout_marginTop="@dimen/dp_150"
+        android:layout_marginTop="@dimen/dp_40"
         android:layout_marginStart="@dimen/dp_20"
         />
     <TextView
@@ -44,7 +55,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signUpCommunity_tvcommunityQuote"
-        app:layout_constraintBottom_toTopOf="@id/signUpCommunity_btnIaccept"
         android:text="@string/community_guidlines"
         android:layout_marginStart="@dimen/dp_20"
         android:textColor="@color/theme_purple"

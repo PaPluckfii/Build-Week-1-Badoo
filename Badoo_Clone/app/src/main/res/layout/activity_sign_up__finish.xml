@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp_UploadPicture">
+    tools:context=".SignUp_Finish">
 
     <ImageView
         android:id="@+id/iv_Logo_Badoo"
@@ -26,71 +26,31 @@
         android:background="@color/background_grey"
         android:layout_marginTop="@dimen/dp_5"
         />
-
     <TextView
-        android:id="@+id/signUpPicture_tvHead1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/dp_20"
         app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
-        android:text="@string/picture_time"
-        android:textSize="@dimen/sp_25"
+        app:layout_constraintBottom_toTopOf="@id/btn_completeProfile"
+        android:text="@string/complete"
         android:textColor="@color/black"
-        android:layout_marginTop="@dimen/dp_20"
-        />
-
-    <TextView
-        android:id="@+id/signUpPicture_tvHead2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpPicture_tvHead1"
-        android:text="@string/need_a_photo"
-        android:textSize="@dimen/sp_25"
-        android:textColor="@color/black"
-        />
-    <TextView
-        android:id="@+id/signUpPicture_tvHead3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpPicture_tvHead2"
-        android:text="@string/badoo_text"
-        android:textSize="@dimen/sp_25"
-        android:textColor="@color/black"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_white"
-        android:drawableTop="@drawable/add_photo"
-        android:padding="@dimen/dp_40"
-        android:text="@string/Upload_photo"
-        android:textColor="@color/theme_purple"
-        app:layout_constraintTop_toBottomOf="@id/signUpPicture_tvHead3"
-        app:layout_constraintBottom_toTopOf="@id/signUpUpload_btnUpload"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
         />
 
     <Button
-        android:id="@+id/signUpUpload_btnUpload"
+        android:id="@+id/btn_completeProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_purple"
-        android:text="@string/Upload_photo"
-        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="@dimen/dp_20"
         android:layout_marginStart="@dimen/dp_20"
         android:layout_marginEnd="@dimen/dp_20"
+        android:text="@string/complete_profile"
+        android:textColor="@color/white"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
