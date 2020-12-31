@@ -103,7 +103,7 @@
                 </LinearLayout>
             </ScrollView>
     </androidx.cardview.widget.CardView>
-    
+
 
     <Button
         android:id="@+id/profileView_btnCancel"

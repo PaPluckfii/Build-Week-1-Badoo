@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Badoo_Clone</string>
+    <string name="app_name_Only_Badoo">Badoo_Clone</string>
     <string name="badoo">badoo</string>
     <string name="heu_you_are">Hey! You are ..</string>
     <string name="male">Male</string>
