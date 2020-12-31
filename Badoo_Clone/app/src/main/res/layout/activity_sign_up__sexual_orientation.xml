@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_SexualOrientation">
+
+    <TextView
+        android:id="@+id/signUp_tvSexualOrientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/sexual_orientation"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:padding="@dimen/dp_40"
+        />
+
+    <RadioButton
+        android:id="@+id/signUp_rBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_40"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUp_tvSexualOrientation"
+        />
+
+    <RadioButton
+        android:id="@+id/signUp_rBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUp_rBtn1"
+
+        />
+
+    <RadioButton
+        android:id="@+id/signUp_rBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUp_rBtn2"
+
+        />
+
+    <TextView
+        android:id="@+id/signUp_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/signUp_rBtn1"
+        app:layout_constraintTop_toTopOf="@id/signUp_rBtn1"
+        app:layout_constraintBottom_toBottomOf="@id/signUp_rBtn1"
+        android:text="@string/straight"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/signUp_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/signUp_rBtn2"
+        app:layout_constraintTop_toTopOf="@id/signUp_rBtn2"
+        app:layout_constraintBottom_toBottomOf="@id/signUp_rBtn2"
+        android:text="@string/gay"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/signUp_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/signUp_rBtn3"
+        app:layout_constraintTop_toTopOf="@id/signUp_rBtn3"
+        app:layout_constraintBottom_toBottomOf="@id/signUp_rBtn3"
+        android:text="@string/lesbian"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/signUp_tvNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/circle_white"
+        android:drawableStart="@drawable/arrow_next"
+        android:padding="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        />
+    <TextView
+        android:id="@+id/signUp_tvPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/circle_white"
+        android:drawableStart="@drawable/arrow_previous"
+        android:padding="@dimen/dp_25"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
