@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Badoo_Clone</string>
+    <string name="app_name_Only_Badoo">Badoo</string>
     <string name="tvLoginScreen_EmailOrMobile">Email or mobile</string>
     <string name="tvLoginScreen_Password">Password</string>
     <string name="Button_LoginActivity_SignIn">Sign in</string>
@@ -9,8 +10,8 @@
     <string name="tvMainPage_messages_Button_MessagesTxt">Messages</string>
     <string name="tvMainPage_messages_Button_ActivityTxt">Activity</string>
     <string name="tvMainPage_messages_Button_RecentFirstTxt">Recent first</string>
-    <string name="tvMainPage_message_BeforeHeart_Txt">It&apos;s just a matter of time until someone new likes you!</string>
-    <string name="tvMainPage_messages_BeforePurpleHeart_Logo_Txt">Welcome to Badoo💜It&apos;s so great to see you</string>
+    <string name="tvMainPage_message_BeforeHeart_Txt">Its just a matter of time until someone new likes you!</string>
+    <string name="tvMainPage_messages_BeforePurpleHeart_Logo_Txt">Welcome to Badoo💜Its so great to see you</string>
 
 
 </resources>
