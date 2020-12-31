@@ -12,4 +12,6 @@
     <color name="tvLoginActivity_grey">#686B73</color>
     <color name="light_grey_icons">#808080</color>
     <color name="dark_grey_icons">#696969</color>
+    <color name="PinkColour_UsedInMainPage_messages">#F7A6CF</color>
+
 </resources>

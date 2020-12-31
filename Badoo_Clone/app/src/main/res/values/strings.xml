@@ -16,6 +16,14 @@
     <string name="Button_LoginActivity_SignIn">Sign in</string>
     <string name="tvLoginActivity_ForgotPassword">Forgot Password?</string>
     <string name="tvLoginActivity_Terms">Privacy ∙ Terms of Service</string>
+
+    <string name="tvMainPage_messages_Matches">Matches</string>
+    <string name="tvMainPage_messages_Button_MessagesTxt">Messages</string>
+    <string name="tvMainPage_messages_Button_ActivityTxt">Activity</string>
+    <string name="tvMainPage_messages_Button_RecentFirstTxt">Recent first</string>
+    <string name="tvMainPage_message_BeforeHeart_Txt">Its just a matter of time until someone new likes you!</string>
+    <string name="tvMainPage_messages_BeforePurpleHeart_Logo_Txt">Welcome to Badoo💜Its so great to see you</string>
+
     <string name="tvProfileView_ProfileNameAndAge">Deepika , 24</string>
     <string name="tvProfileView_ProfileHobbies">Singer</string>
     <string name="tvProfileView_ProfileOtherDetails">Works at Masai School</string>
@@ -71,6 +79,7 @@
     <string name="no">No</string>
     <string name="sometimes">Sometimes</string>
     <string name="rather_not_say">Id rather not say</string>
+
 
 
 
