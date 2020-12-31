@@ -6,16 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".SignUp_Motive">
 
+    <ImageView
+        android:id="@+id/iv_Logo_Badoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_badoo_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/LoginActivity_Badoo_ShadowUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
+        android:background="@color/background_grey"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+
     <TextView
         android:id="@+id/signUpMotive_tvWhatYouWant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-       android:layout_marginTop="@dimen/dp_40"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
+       android:layout_marginTop="@dimen/dp_20"
         android:text="@string/what_do_you_honestly_want"
-        android:textSize="@dimen/sp_20"
+        android:textSize="@dimen/sp_25"
         android:textColor="@color/black"
         />
     <TextView
@@ -144,7 +165,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/circle_white"
         android:drawableStart="@drawable/arrow_next"
-        android:padding="@dimen/dp_25"
+        android:padding="@dimen/dp_10"
         android:layout_marginEnd="@dimen/dp_20"
         android:layout_marginBottom="@dimen/dp_20"
         />

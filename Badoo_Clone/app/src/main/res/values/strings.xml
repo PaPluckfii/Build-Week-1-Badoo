@@ -52,6 +52,10 @@
     <string name="badoo_text">Badoo</string>
     <string name="Upload_photo">Upload photo</string>
 
+    <string name="almost_there">Almost there!</string>
+    <string name="set_password">Just set a password</string>
+    <string name="lets_go">Lets go</string>
+
     <string name="sexual_orientation">How would you describe your sexual orientation</string>
     <string name="straight">Straight</string>
     <string name="gay">Gay</string>
@@ -69,6 +73,8 @@
     <string name="sometimes">Sometimes</string>
     <string name="rather_not_say">Id rather not say</string>
 
+    <string name="complete_profile">Complete Profile</string>
+    <string name="complete">People who complete their profiles get more matches!</string>
 
 
 </resources>
