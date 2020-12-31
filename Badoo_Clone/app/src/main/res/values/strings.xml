@@ -48,5 +48,23 @@
     <string name="badoo_text">Badoo</string>
     <string name="Upload_photo">Upload photo</string>
 
+    <string name="sexual_orientation">How would you describe your sexual orientation</string>
+    <string name="straight">Straight</string>
+    <string name="gay">Gay</string>
+    <string name="lesbian">Lesbian</string>
+
+    <string name="relation">What is your relationship status?</string>
+    <string name="single">Single</string>
+    <string name="taken">Taken</string>
+    <string name="complicated">Its complicated</string>
+    <string name="open">Open</string>
+
+    <string name="drink_smoke">Do you smoke/drink?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sometimes">Sometimes</string>
+    <string name="rather_not_say">Id rather not say</string>
+
+
 
 </resources>

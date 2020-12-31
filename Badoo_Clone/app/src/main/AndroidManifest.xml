@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Badoo_Clone">
-        <activity android:name=".SignUp_UploadPicture"></activity>
+        <activity android:name=".SignUp_DrinkSmoke"></activity>
+        <activity android:name=".SignUp_RelationshipStatus" />
+        <activity android:name=".SignUp_SexualOrientation" />
+        <activity android:name=".SignUp_UploadPicture" />
         <activity android:name=".SignUp_Motive" />
         <activity android:name=".SignUp_CommunityGuidlines" />
         <activity android:name=".SignUp_Email" />
