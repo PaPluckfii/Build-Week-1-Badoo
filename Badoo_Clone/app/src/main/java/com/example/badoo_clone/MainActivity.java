@@ -26,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
         mainActivity_mBtnMale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+               Intent intent = new Intent(MainActivity.this,SignUp_Name.class);
+               startActivity(intent);
             }
         });
         mainActivity_mBtnFemale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainActivity.this,SignUp_Name.class);
+                startActivity(intent);
             }
         });
         mainActivity_mBtnMoreChoices.setOnClickListener(new View.OnClickListener() {

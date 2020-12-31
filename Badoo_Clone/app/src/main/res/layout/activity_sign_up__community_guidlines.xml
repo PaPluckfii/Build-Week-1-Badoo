@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp_CommunityGuidlines">
+
+<ImageView
+    android:id="@+id/signUpCommunity_imgHeart"
+    android:layout_width="@dimen/dp_150"
+    android:layout_height="@dimen/dp_150"
+    android:layout_marginStart="@dimen/dp_20"
+    android:src="@drawable/badoo_heart_smile"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/signUpCommunity_tvHonestyPledge"
+    />
+    <TextView
+        android:id="@+id/signUpCommunity_tvHonestyPledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/signUpCommunity_imgHeart"
+        android:text="@string/the_honesty_pledge"
+        android:textSize="@dimen/dp_25"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_150"
+        android:layout_marginStart="@dimen/dp_20"
+        />
+    <TextView
+        android:id="@+id/signUpCommunity_tvcommunityQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpCommunity_tvHonestyPledge"
+        app:layout_constraintBottom_toTopOf="@id/signUpCommunity_tvCommunityGuidlines"
+        android:text="@string/honesty_quote"
+        android:padding="@dimen/dp_20"
+        />
+    <TextView
+        android:id="@+id/signUpCommunity_tvCommunityGuidlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpCommunity_tvcommunityQuote"
+        app:layout_constraintBottom_toTopOf="@id/signUpCommunity_btnIaccept"
+        android:text="@string/community_guidlines"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textColor="@color/theme_purple"
+        />
+
+    <Button
+        android:id="@+id/signUpCommunity_btnIaccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/rectangle_purple"
+        android:text="@string/i_accept"
+        android:textColor="@color/white"
+        android:paddingStart="@dimen/dp_40"
+        android:paddingEnd="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
