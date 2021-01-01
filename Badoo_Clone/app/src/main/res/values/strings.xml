@@ -96,6 +96,25 @@
     <string name="complete">People who complete their profiles get more matches!</string>
     <string name="txt_StandOutonBadoo">Stand out on Badoo</string>
     <string name="txt_SaveOnPremium">Save on Premium</string>
+    <string name="txt_GetDiscountOnPremium">Try before you buy when you sign up today.</string>
+    <string name="btnText_GetPremium">Get Premium</string>
+    <string name="txtGetPhotoVerified">Get Photo Verified</string>
+    <string name="txtLetPeopleKnow_TheyCanTrustYou">Let people know they can trust you.</string>
+    <string name="btntxtTop_up_credits">Top up credits</string>
+    <string name="btntxt_Verify_me">Verify me</string>
+    <string name="txtAdd_Photos">Add two+ photos</string>
+    <string name="txtChooseVariety_Photos">Choose a variety of fun photos of yourself.</string>
+    <string name="btntxtChoose_photos">Choose photos</string>
+    <string name="txtDontStopSwiping">Dont stop swiping</string>
+    <string name="txtNeverMissAMatch">Never miss a match with unlimited right swipes.</string>
+    <string name="btnTextGet_Swipes">Get swipes</string>
+    <string name="txtGetMatchesFaster">Get matches faster</string>
+    <string name="txtUseCreditsToBoostYourProfile">Use credits to boost your profile to get more right swipes.</string>
+    <string name="btnText_Top_up_credits">Top up credits</string>
+    <string name="txtFind_people_faster">Find people faster</string>
+    <string name="txtAdvanced_filters_let_you">Advanced filters let you search better.</string>
+    <string name="btnText_Upgrade_filters">Upgrade filters</string>
+
     <string name="txt_GetDiscountOnPremium">Save 20% on your first premium purchase on Badoo.</string>
 
     <string name="great_choice">Great choice!</string>
@@ -103,6 +122,7 @@
     <string name="the_better">have, the better</string>
 
     <string name="skip">Skip</string>
+
 
 
 </resources>
