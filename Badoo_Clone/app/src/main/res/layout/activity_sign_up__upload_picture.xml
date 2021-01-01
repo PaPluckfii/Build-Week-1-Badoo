@@ -6,17 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".SignUp_UploadPicture">
 
+    <ImageView
+        android:id="@+id/iv_Logo_Badoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_badoo_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/LoginActivity_Badoo_ShadowUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
+        android:background="@color/background_grey"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+
     <TextView
         android:id="@+id/signUpPicture_tvHead1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
         android:text="@string/picture_time"
         android:textSize="@dimen/sp_25"
         android:textColor="@color/black"
-        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
         />
 
     <TextView
@@ -40,6 +61,24 @@
         android:text="@string/badoo_text"
         android:textSize="@dimen/sp_25"
         android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_white"
+        android:drawableTop="@drawable/add_photo"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_40"
+        android:paddingBottom="@dimen/dp_40"
+        android:text="@string/Upload_photo"
+        android:textColor="@color/theme_purple"
+        app:layout_constraintTop_toBottomOf="@id/signUpPicture_tvHead3"
+        app:layout_constraintBottom_toTopOf="@id/signUpUpload_btnUpload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
         />
 
     <Button

@@ -1,7 +1,10 @@
 <resources>
 
+
     <string name="app_name">Badoo_Clone</string>
     <string name="app_name_Only_Badoo">badoo</string>
+  
+    <string name="badoo">badoo</string>
     <string name="heu_you_are">Hey! You are ..</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
@@ -21,8 +24,10 @@
     <string name="tvMainPage_messages_Button_MessagesTxt">Messages</string>
     <string name="tvMainPage_messages_Button_ActivityTxt">Activity</string>
     <string name="tvMainPage_messages_Button_RecentFirstTxt">Recent first</string>
-    <string name="tvMainPage_message_BeforeHeart_Txt">Its just a matter of time until someone new likes you!</string>
-    <string name="tvMainPage_messages_BeforePurpleHeart_Logo_Txt">Welcome to Badoo💜Its so great to see you</string>
+    <string name="its_just_a_matter">Its just a matter of time until </string>
+    <string name="someone_new">someone new likes you!</string>
+    <string name="welcom">Welcome to Badoo💜</string>
+    <string name="its_so_great">Its so great to see you</string>
 
     <string name="tvProfileView_ProfileNameAndAge">Deepika , 24</string>
     <string name="tvProfileView_ProfileHobbies">Singer</string>
@@ -63,6 +68,10 @@
     <string name="badoo_text">Badoo</string>
     <string name="Upload_photo">Upload photo</string>
 
+    <string name="almost_there">Almost there!</string>
+    <string name="set_password">Just set a password</string>
+    <string name="lets_go">Lets go</string>
+
     <string name="sexual_orientation">How would you describe your sexual orientation</string>
     <string name="straight">Straight</string>
     <string name="gay">Gay</string>
@@ -84,6 +93,8 @@
 
 
 
+    <string name="complete_profile">Complete Profile</string>
+    <string name="complete">People who complete their profiles get more matches!</string>
 
 
 

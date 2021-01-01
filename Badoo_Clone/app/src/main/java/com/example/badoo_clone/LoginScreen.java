@@ -20,43 +20,8 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-        etTakeInputEmail = findViewById(R.id.et_LoginActivity_emailInput);
-        etTakeInputPassword = findViewById(R.id.LoginActivity_Password);
-        btnSignIn = findViewById(R.id.LoginScreen_button);
-
-        etTakeInputEmail.addTextChangedListener(textWatcher);
-        etTakeInputPassword.addTextChangedListener(textWatcher);
-
+      
         initialiseViewsAndListeners();
-
-    }
-
-    private TextWatcher textWatcher = new TextWatcher() {
-        @Override
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-            String EmailOrPhoneEntered = etTakeInputEmail.getText().toString().trim();
-            String PasswordEntered = etTakeInputPassword.getText().toString().trim();
-
-            btnSignIn.setEnabled(!EmailOrPhoneEntered.isEmpty() && !PasswordEntered.isEmpty());
-
-        }
-
-        @Override
-        public void afterTextChanged(Editable s) {
-
-        }
-    };
-
-    private void initialiseViewsAndListeners() {
-        etTakeInputEmail = findViewById(R.id.et_LoginActivity_emailInput);
-        etTakeInputPassword = findViewById(R.id.LoginActivity_Password);
-        btnSignIn = findViewById(R.id.LoginScreen_button);
-
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +33,15 @@ public class LoginScreen extends AppCompatActivity {
 
             }
         });
+
+    }
+
+
+    private void initialiseViewsAndListeners() {
+        etTakeInputEmail = findViewById(R.id.et_LoginActivity_emailInput);
+        etTakeInputPassword = findViewById(R.id.LoginActivity_Password);
+        btnSignIn = findViewById(R.id.LoginScreen_button);
+
     }
 
     private boolean isCredentialsValid() {
@@ -78,7 +52,7 @@ public class LoginScreen extends AppCompatActivity {
             etTakeInputEmail.setError("Invalid Email ID");
             isDataValid = false;
         }
-        if (etTakeInputPassword.toString().length() < 5) {
+        if (etTakeInputPassword.getText().toString().length() < 5) {
             etTakeInputPassword.setError("Password length is less than 5 Characters");
             isDataValid = false;
         }

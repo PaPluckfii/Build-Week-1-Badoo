@@ -7,18 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SignUp_UploadPicture extends AppCompatActivity {
-    private Button signUpUpload_mBtnUpload;
+public class SignUp_Finish extends AppCompatActivity {
+
+    private Button mBtn_completeProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up__upload_picture);
-        signUpUpload_mBtnUpload=findViewById(R.id.signUpUpload_btnUpload);
-        signUpUpload_mBtnUpload.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_sign_up__finish);
+        mBtn_completeProfile=findViewById(R.id.btn_completeProfile);
+        mBtn_completeProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_UploadPicture.this,SignUp_SetPassword.class);
+                Intent intent = new Intent(SignUp_Finish.this,MainPage_ProfileView.class);
                 startActivity(intent);
             }
         });

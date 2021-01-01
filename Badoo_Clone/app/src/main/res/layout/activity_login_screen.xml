@@ -82,7 +82,6 @@
         android:layout_marginTop="@dimen/dp_40"
         android:layout_marginEnd="@dimen/dp_20"
         android:background="@drawable/rectangle"
-        android:enabled="false"
         android:text="@string/Button_LoginActivity_SignIn"
         android:textAllCaps="false"
         android:textColor="@color/white"

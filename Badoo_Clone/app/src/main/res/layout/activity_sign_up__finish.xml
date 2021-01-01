@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp_CommunityGuidlines">
+    tools:context=".SignUp_Finish">
 
     <ImageView
         android:id="@+id/iv_Logo_Badoo"
@@ -26,53 +26,31 @@
         android:background="@color/background_grey"
         android:layout_marginTop="@dimen/dp_5"
         />
-
     <TextView
-        android:id="@+id/signUpCommunity_tvHonestyPledge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
-        android:text="@string/the_honesty_pledge"
-        android:textSize="@dimen/sp_25"
-        android:textColor="@color/black"
-        android:layout_marginTop="@dimen/dp_40"
-        android:layout_marginStart="@dimen/dp_20"
-        />
-    <TextView
-        android:id="@+id/signUpCommunity_tvcommunityQuote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpCommunity_tvHonestyPledge"
-        app:layout_constraintBottom_toTopOf="@id/signUpCommunity_tvCommunityGuidlines"
-        android:text="@string/honesty_quote"
+        app:layout_constraintEnd_toEndOf="parent"
         android:padding="@dimen/dp_20"
-        />
-    <TextView
-        android:id="@+id/signUpCommunity_tvCommunityGuidlines"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signUpCommunity_tvcommunityQuote"
-        android:text="@string/community_guidlines"
-        android:layout_marginStart="@dimen/dp_20"
-        android:textColor="@color/theme_purple"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
+        app:layout_constraintBottom_toTopOf="@id/btn_completeProfile"
+        android:text="@string/complete"
+        android:textColor="@color/black"
         />
 
     <Button
-        android:id="@+id/signUpCommunity_btnIaccept"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_completeProfile"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/rectangle_purple"
-        android:text="@string/i_accept"
-        android:textColor="@color/white"
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginStart="@dimen/dp_20"
-        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:text="@string/complete_profile"
+        android:textColor="@color/white"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

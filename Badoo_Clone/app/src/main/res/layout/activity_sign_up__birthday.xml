@@ -5,16 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp_Birthday">
+
+    <ImageView
+        android:id="@+id/iv_Logo_Badoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_badoo_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/LoginActivity_Badoo_ShadowUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
+        android:background="@color/background_grey"
+        android:layout_marginTop="@dimen/dp_5"
+        />
     <TextView
         android:id="@+id/signUpBirthday_tvWhensYourBirthday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
         android:text="@string/when_your_birthday"
         android:textSize="@dimen/dp_25"
-        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
         android:textColor="@color/black"
         />
 
@@ -66,6 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="DD"
+        android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/signUpBirthday_tvDay"
         app:layout_constraintStart_toStartOf="@id/signUpBirthday_tvDay"
@@ -76,6 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="MM"
+        android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/signUpBirthday_tvMonth"
         app:layout_constraintStart_toStartOf="@id/signUpBirthday_tvMonth"
@@ -86,6 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="YYYY"
+        android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/signUpBirthday_tvYear"
         app:layout_constraintStart_toStartOf="@id/signUpBirthday_tvYear"

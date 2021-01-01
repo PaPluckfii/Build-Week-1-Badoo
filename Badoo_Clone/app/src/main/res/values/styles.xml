@@ -2,10 +2,7 @@
 <resources>
 
     <style name="LoginActivityEditTextStyle">
-
         <item name="android:layout_marginStart">@dimen/dp_20</item>
-
-
         </style>
 
     <style name="profileView_tabs">

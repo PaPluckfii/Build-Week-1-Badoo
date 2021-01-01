@@ -5,11 +5,13 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/main_applogo"
-        android:label="@string/app_name_Only_Badoo"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Badoo_Clone">
-        <activity android:name=".SignUp_DrinkSmoke"></activity>
+        <activity android:name=".SignUp_Finish"></activity>
+        <activity android:name=".SignUp_SetPassword" />
+        <activity android:name=".SignUp_DrinkSmoke" />
         <activity android:name=".SignUp_RelationshipStatus" />
         <activity android:name=".SignUp_SexualOrientation" />
         <activity android:name=".SignUp_UploadPicture" />
