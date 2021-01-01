@@ -19,60 +19,155 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_50"
+        android:weightSum="4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:weightSum="4">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1">
+
             <Button
                 android:id="@+id/myProfile_btnLocation"
                 android:layout_width="@dimen/dp_50"
                 android:layout_height="@dimen/dp_50"
-                android:background="@drawable/ic_location_grey"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:background="@drawable/ic_location_grey" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1">
+
             <Button
                 android:id="@+id/myProfile_btnCardsProfile"
                 android:layout_width="@dimen/dp_50"
                 android:layout_height="@dimen/dp_50"
-                android:background="@drawable/cards_profile_grey"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:background="@drawable/cards_profile_grey" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1">
+
             <Button
                 android:id="@+id/myProfile_btnMessages"
                 android:layout_width="@dimen/dp_50"
                 android:layout_height="@dimen/dp_50"
-                android:background="@drawable/messenger_icon_grey"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:background="@drawable/messenger_icon_grey" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1">
+
             <Button
                 android:id="@+id/myProfile_btnMyProfile"
                 android:layout_width="@dimen/dp_50"
                 android:layout_height="@dimen/dp_50"
-                android:background="@drawable/user_profile_icon_purple"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:background="@drawable/user_profile_icon_purple" />
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_SettingIcon_ForMyProfileMainActivity"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_15"
+         android:layout_marginBottom="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="@+id/myProfile_ivBadooLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_settings_icon_grey" />
+
+    <ImageView
+        android:id="@+id/iv_ProfileIcon_for_MainActivityProfile"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/myProfile_ivBadooLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user_profile_icon_grey" />
+
+    <ImageView
+        android:id="@+id/ivProfileIcon_MainActivitySelf"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile_man_mainactivityprofileself" />
+
+    <ImageView
+        android:id="@+id/CameraIcon_for_profileMainActivitySelf"
+        android:layout_width="57dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfileIcon_MainActivitySelf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/camera_icon_for_provileviewself" />
+
+    <TextView
+        android:id="@+id/tvName_ProfileSelf_MainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/Name_ProfileView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CameraIcon_for_profileMainActivitySelf" />
+
+
+    <TextView
+        android:id="@+id/tvBelowName_PreviewProfile_MainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/BelowName_ProfileView_MainActivity"
+        android:textColor="@color/tvLoginActivity_grey"
+        android:textSize="@dimen/dp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName_ProfileSelf_MainActivity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:drawablePadding="@dimen/dp_10"
+        android:background="@drawable/rectanglewhiteforbutton"
+        android:drawableStart="@drawable/badoo_token_ic_generic_coin"
+        android:gravity="top"
+        android:textSize="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_20"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_80"
+        android:paddingTop="@dimen/dp_15"
+        android:paddingBottom="@dimen/dp_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBelowName_PreviewProfile_MainActivity"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

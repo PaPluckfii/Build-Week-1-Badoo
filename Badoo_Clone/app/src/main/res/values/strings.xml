@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">Badoo_Clone</string>
-    <string name="badoo">badoo</string>
+    <string name="app_name_Only_Badoo">badoo</string>
     <string name="heu_you_are">Hey! You are ..</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
@@ -79,6 +79,10 @@
     <string name="no">No</string>
     <string name="sometimes">Sometimes</string>
     <string name="rather_not_say">Id rather not say</string>
+    <string name="Name_ProfileView">Existing User, 19</string>
+    <string name="BelowName_ProfileView_MainActivity">Preview Profile</string>
+
+
 
 
 

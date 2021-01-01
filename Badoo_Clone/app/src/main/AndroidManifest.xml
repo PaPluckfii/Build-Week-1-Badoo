@@ -22,7 +22,7 @@
         <activity android:name=".MainPage_ConnectInstantly" />
         <activity android:name=".SignUp_Birthday" />
         <activity android:name=".SignUp_Name" />
-        <activity android:name=".SignInActivity" />
+        <activity android:name=".LoginScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
