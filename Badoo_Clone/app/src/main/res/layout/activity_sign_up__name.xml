@@ -35,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/LoginActivity_Badoo_ShadowUnderline"
         android:text="@string/next_up"
-        android:textSize="@dimen/dp_25"
+        android:textSize="@dimen/sp_25"
         android:layout_marginTop="@dimen/dp_20"
         android:textColor="@color/black"
         />
