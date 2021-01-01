@@ -64,6 +64,7 @@
         />
 
     <TextView
+        android:id="@+id/SignUpUpload_tvphoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/square_white"
@@ -75,18 +76,17 @@
         android:text="@string/Upload_photo"
         android:textColor="@color/theme_purple"
         app:layout_constraintTop_toBottomOf="@id/signUpPicture_tvHead3"
-        app:layout_constraintBottom_toTopOf="@id/signUpUpload_btnUpload"
+        app:layout_constraintBottom_toTopOf="@id/signUpUpload_btnSkip"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         />
 
     <Button
-        android:id="@+id/signUpUpload_btnUpload"
+        android:id="@+id/signUpUpload_btnSkip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle_purple"
-        android:text="@string/Upload_photo"
+        android:text="@string/skip"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

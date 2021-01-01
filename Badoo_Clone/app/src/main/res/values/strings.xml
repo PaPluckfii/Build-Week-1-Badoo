@@ -115,5 +115,14 @@
     <string name="txtAdvanced_filters_let_you">Advanced filters let you search better.</string>
     <string name="btnText_Upgrade_filters">Upgrade filters</string>
 
+    <string name="txt_GetDiscountOnPremium">Save 20% on your first premium purchase on Badoo.</string>
+
+    <string name="great_choice">Great choice!</string>
+    <string name="the_more_photo">The more photos you</string>
+    <string name="the_better">have, the better</string>
+
+    <string name="skip">Skip</string>
+
+
 
 </resources>
