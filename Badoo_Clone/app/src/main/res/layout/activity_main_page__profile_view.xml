@@ -15,82 +15,92 @@
         android:layout_marginTop="@dimen/dp_15"
         android:src="@drawable/logo_badoo_purple" />
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@id/profileView_ivBadooLogo">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_below="@id/profileView_ivBadooLogo"
+        app:cardElevation="@dimen/dp_6">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/trail_profile_pic"
-                android:scaleType="centerCrop" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_10"
-                android:weightSum="3">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Single" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/trail_profile_pic"
+                    android:scaleType="fitXY" />
 
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Non-smoker" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:weightSum="3">
 
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="English" />
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Single" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Non-smoker" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="English" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:weightSum="3">
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Hindi" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="170cm" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Music" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trail_profile_pic" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trail_profile_pic" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trail_profile_pic" />
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_10"
-                android:weightSum="3">
-
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Hindi" />
-
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="170cm" />
-
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Music" />
-
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/trail_profile_pic" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/trail_profile_pic" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/trail_profile_pic" />
-
-        </LinearLayout>
-    </ScrollView>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:id="@+id/profileView_llLikeDislikeIcons"
@@ -162,63 +172,52 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/profileView_llBottomIcons"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_60"
         android:layout_alignParentBottom="true"
+        android:background="@color/background_grey"
         android:weightSum="4">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnLocation"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_location_grey" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/ic_location_grey"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnCardsProfile"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/cards_profile_purple" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/cards_profile_purple"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnMessages"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/messenger_icon_grey" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/messenger_icon_grey"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnMyProfile"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/user_profile_icon_grey" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/user_profile_icon_grey"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
     </LinearLayout>
 
