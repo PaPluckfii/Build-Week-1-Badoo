@@ -1,6 +1,9 @@
 <resources>
 
-    <string name="app_name_Only_Badoo">Badoo_Clone</string>
+
+    <string name="app_name">Badoo_Clone</string>
+    <string name="app_name_Only_Badoo">badoo</string>
+  
     <string name="badoo">badoo</string>
     <string name="heu_you_are">Hey! You are ..</string>
     <string name="male">Male</string>
@@ -85,6 +88,10 @@
     <string name="no">No</string>
     <string name="sometimes">Sometimes</string>
     <string name="rather_not_say">Id rather not say</string>
+    <string name="Name_ProfileView">Existing User, 19</string>
+    <string name="BelowName_ProfileView_MainActivity">Preview Profile</string>
+
+
 
     <string name="complete_profile">Complete Profile</string>
     <string name="complete">People who complete their profiles get more matches!</string>

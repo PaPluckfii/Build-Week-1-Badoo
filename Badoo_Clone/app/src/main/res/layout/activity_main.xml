@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/comfortaa"
         android:includeFontPadding="true"
-        android:text="@string/badoo"
+        android:text="@string/app_name_Only_Badoo"
         android:textColor="@color/theme_purple"
         android:textSize="@dimen/sp_30"
         android:textStyle="bold"
