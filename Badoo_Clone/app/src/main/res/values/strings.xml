@@ -90,11 +90,13 @@
     <string name="rather_not_say">Id rather not say</string>
     <string name="Name_ProfileView">Existing User, 19</string>
     <string name="BelowName_ProfileView_MainActivity">Preview Profile</string>
-
-
-
+    <string name="txt_credits">Credits</string>
+    <string name="txt_Premium">Premium</string>
     <string name="complete_profile">Complete Profile</string>
     <string name="complete">People who complete their profiles get more matches!</string>
+    <string name="txt_StandOutonBadoo">Stand out on Badoo</string>
+    <string name="txt_SaveOnPremium">Save on Premium</string>
+    <string name="txt_GetDiscountOnPremium">Save 20% on your first premium purchase on Badoo.</string>
 
 
 
