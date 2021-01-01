@@ -35,7 +35,7 @@
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_location_grey" />
+                android:background="@drawable/ic_location_purple" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -46,9 +46,9 @@
             <Button
                 android:id="@+id/connectInstantly_btnCardsProfile"
                 android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:background="@drawable/cards_profile_purple" />
+                android:background="@drawable/cards_profile_grey" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView

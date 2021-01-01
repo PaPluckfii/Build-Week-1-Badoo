@@ -39,17 +39,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/user_profile_icon_grey" />
 
-    <ImageView
-        android:id="@+id/ivProfileIcon_MainActivitySelf"
-        android:layout_width="154dp"
-        android:layout_height="154dp"
-        android:layout_marginBottom="404dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/profile_man_mainactivityprofileself" />
-
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
@@ -80,7 +69,7 @@
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
-                android:background="@drawable/cards_profile_purple" />
+                android:background="@drawable/cards_profile_grey" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -106,7 +95,7 @@
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
-                android:background="@drawable/user_profile_icon_grey" />
+                android:background="@drawable/user_profile_icon_purple" />
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
@@ -136,10 +125,11 @@
         android:id="@+id/ivProfileIcon_MainActivitySelf"
         android:layout_width="154dp"
         android:layout_height="154dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="472dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myProfile_ivBadooLogo"
         app:srcCompat="@drawable/profile_man_mainactivityprofileself" />
@@ -149,11 +139,11 @@
         android:id="@+id/CameraIcon_for_profileMainActivitySelf"
         android:layout_width="57dp"
         android:layout_height="51dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivProfileIcon_MainActivitySelf"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintHorizontal_bias="0.632"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/camera_icon_for_provileviewself" />
+        app:srcCompat="@drawable/camera_icon_for_provileviewself"
+        tools:layout_editor_absoluteY="168dp" />
 
     <TextView
         android:id="@+id/tvName_ProfileSelf_MainActivity"

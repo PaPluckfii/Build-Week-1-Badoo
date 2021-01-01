@@ -3,7 +3,7 @@
 
     <string name="app_name">Badoo_Clone</string>
     <string name="app_name_Only_Badoo">badoo</string>
-  
+
     <string name="badoo">badoo</string>
     <string name="heu_you_are">Hey! You are ..</string>
     <string name="male">Male</string>
@@ -98,6 +98,11 @@
     <string name="txt_SaveOnPremium">Save on Premium</string>
     <string name="txt_GetDiscountOnPremium">Save 20% on your first premium purchase on Badoo.</string>
 
+    <string name="great_choice">Great choice!</string>
+    <string name="the_more_photo">The more photos you</string>
+    <string name="the_better">have, the better</string>
+
+    <string name="skip">Skip</string>
 
 
 </resources>

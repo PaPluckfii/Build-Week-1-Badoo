@@ -233,7 +233,7 @@
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
-                android:background="@drawable/cards_profile_purple" />
+                android:background="@drawable/cards_profile_grey" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -246,7 +246,7 @@
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
-                android:background="@drawable/messenger_icon_grey" />
+                android:background="@drawable/messenger_icon_purple" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
