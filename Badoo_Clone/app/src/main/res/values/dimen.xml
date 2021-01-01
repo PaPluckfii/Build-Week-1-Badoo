@@ -115,6 +115,9 @@
     <dimen name="dp_137">137dp</dimen>
     <dimen name="dp_260">260dp</dimen>
     <dimen name="dp_0.1">0.1dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_190">190dp</dimen>
+    <dimen name="dp_128">128dp</dimen>
 
 
 
