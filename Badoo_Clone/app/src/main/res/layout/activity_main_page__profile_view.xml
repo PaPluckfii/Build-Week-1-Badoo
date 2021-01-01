@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,146 +13,161 @@
         android:layout_height="@dimen/dp_50"
         android:layout_marginTop="@dimen/dp_15"
         android:src="@drawable/logo_badoo_purple"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"/>
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/profileView_ivBadooLogo">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/profileView_cvProfilePics"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:elevation="@dimen/dp_5"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/profileView_ivBadooLogo"
-        android:layout_margin="@dimen/dp_15">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <ScrollView
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/trail_profile_pic"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="@dimen/dp_10">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                <TextView
+                    style="@style/profileView_tabs"
+                    android:text="Single" />
 
-                    <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scaleType="centerCrop"
-                        android:background="@drawable/trail_profile_pic"/>
+                <TextView
+                    style="@style/profileView_tabs"
+                    android:text="Non-smoker" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:layout_margin="@dimen/dp_10">
+                <TextView
+                    style="@style/profileView_tabs"
+                    android:text="English" />
 
-                        <TextView
-                            style="@style/profileView_tabs"
-                            android:text="Single" />
+            </LinearLayout>
 
-                        <TextView
-                            style="@style/profileView_tabs"
-                            android:text="Non-smoker" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="@dimen/dp_10">
 
-                        <TextView
-                            style="@style/profileView_tabs"
-                            android:text="English" />
+                <TextView
+                    style="@style/profileView_tabs"
+                    android:text="Hindi" />
 
-                    </LinearLayout>
+                <TextView
+                    style="@style/profileView_tabs"
+                    android:text="170cm" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:layout_margin="@dimen/dp_10">
+                <TextView
+                    style="@style/profileView_tabs"
+                    android:text="Music" />
 
-                        <TextView
-                            style="@style/profileView_tabs"
-                            android:text="Hindi" />
+            </LinearLayout>
 
-                        <TextView
-                            style="@style/profileView_tabs"
-                            android:text="170cm" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trail_profile_pic"/>
 
-                        <TextView
-                            style="@style/profileView_tabs"
-                            android:text="Music" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trail_profile_pic"/>
 
-                    </LinearLayout>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trail_profile_pic"/>
 
-                    <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/trail_profile_pic"/>
+        </LinearLayout>
+    </ScrollView>
 
-                    <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/trail_profile_pic"/>
+    <LinearLayout
+        android:id="@+id/profileView_llLikeDislikeIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_100">
 
-                    <ImageView
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/trail_profile_pic"/>
+        <Button
+            android:id="@+id/profileView_btnCancel"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/cancel_icon_circular"
+            android:layout_marginRight="@dimen/dp_30"/>
 
-                </LinearLayout>
-            </ScrollView>
-    </androidx.cardview.widget.CardView>
+        <Button
+            android:id="@+id/profileView_btnLike"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/like_heart_icon_circular"/>
 
-
-    <Button
-        android:id="@+id/profileView_btnCancel"
-        android:layout_width="@dimen/dp_80"
-        android:layout_height="@dimen/dp_80"
-        android:background="@drawable/cancel_icon_circular"
-        app:layout_constraintBottom_toBottomOf="@id/profileView_cvProfilePics"
-        app:layout_constraintEnd_toEndOf="@+id/profileView_cvProfilePics"
-        app:layout_constraintStart_toStartOf="@+id/profileView_cvProfilePics"
-        android:layout_marginLeft="@dimen/dp_100"
-        android:layout_marginBottom="@dimen/dp_15"/>
-
-    <Button
-        android:id="@+id/profileView_btnLike"
-        android:layout_width="@dimen/dp_80"
-        android:layout_height="@dimen/dp_80"
-        android:background="@drawable/like_heart_icon_circular"
-        app:layout_constraintBottom_toBottomOf="@id/profileView_cvProfilePics"
-        app:layout_constraintEnd_toEndOf="@+id/profileView_cvProfilePics"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginRight="@dimen/dp_100"
-        android:layout_marginBottom="@dimen/dp_15"/>
-
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/profileView_btnLike">
+        android:orientation="vertical"
+        android:layout_above="@id/profileView_llLikeDislikeIcons"
+        android:layout_marginBottom="@dimen/dp_10">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tvProfileView_ProfileNameAndAge"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvProfileView_ProfileHobbies"
+            android:textColor="@color/white"
             android:textSize="@dimen/sp_16"
-            android:textStyle="bold" />
+            android:shadowColor="@color/black"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvProfileView_ProfileOtherDetails"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"/>
+
     </LinearLayout>
+
 
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_50"
+        android:layout_height="@dimen/dp_60"
         android:weightSum="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="@dimen/dp_8">
+        android:layout_alignParentBottom="true">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -208,5 +223,4 @@
 
     </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

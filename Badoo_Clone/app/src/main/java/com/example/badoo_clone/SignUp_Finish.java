@@ -19,7 +19,7 @@ public class SignUp_Finish extends AppCompatActivity {
         mBtn_completeProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_Finish.this,MainPage_ConnectInstantly.class);
+                Intent intent = new Intent(SignUp_Finish.this,MainPage_ProfileView.class);
                 startActivity(intent);
             }
         });
