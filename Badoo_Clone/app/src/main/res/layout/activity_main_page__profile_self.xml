@@ -18,13 +18,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
+
+    <ImageView
+        android:id="@+id/iv_SettingIcon_ForMyProfileMainActivity"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_15"
+         android:layout_marginBottom="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="@+id/myProfile_ivBadooLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_settings_icon_grey" />
+
+    <ImageView
+        android:id="@+id/iv_ProfileIcon_for_MainActivityProfile"
+        android:layout_width="@dimen/dp_28"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/myProfile_ivBadooLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user_profile_icon_grey" />
+
+    <ImageView
+        android:id="@+id/ivProfileIcon_MainActivitySelf"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile_man_mainactivityprofileself" />
+
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_50"
-        android:weightSum="4"
+        android:layout_height="@dimen/dp_60"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:weightSum="4">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -33,8 +64,8 @@
 
             <Button
                 android:id="@+id/myProfile_btnLocation"
-                android:layout_width="@dimen/dp_50"
-                android:layout_height="@dimen/dp_50"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
                 android:background="@drawable/ic_location_grey" />
         </androidx.cardview.widget.CardView>
@@ -46,10 +77,10 @@
 
             <Button
                 android:id="@+id/myProfile_btnCardsProfile"
-                android:layout_width="@dimen/dp_50"
-                android:layout_height="@dimen/dp_50"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
-                android:background="@drawable/cards_profile_grey" />
+                android:background="@drawable/cards_profile_purple" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -59,8 +90,8 @@
 
             <Button
                 android:id="@+id/myProfile_btnMessages"
-                android:layout_width="@dimen/dp_50"
-                android:layout_height="@dimen/dp_50"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
                 android:background="@drawable/messenger_icon_grey" />
         </androidx.cardview.widget.CardView>
@@ -72,15 +103,16 @@
 
             <Button
                 android:id="@+id/myProfile_btnMyProfile"
-                android:layout_width="@dimen/dp_50"
-                android:layout_height="@dimen/dp_50"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
                 android:layout_gravity="center"
-                android:background="@drawable/user_profile_icon_purple" />
+                android:background="@drawable/user_profile_icon_grey" />
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
     <ImageView
+
         android:id="@+id/iv_SettingIcon_ForMyProfileMainActivity"
         android:layout_width="@dimen/dp_28"
         android:layout_height="@dimen/dp_30"
@@ -113,6 +145,7 @@
         app:srcCompat="@drawable/profile_man_mainactivityprofileself" />
 
     <ImageView
+
         android:id="@+id/CameraIcon_for_profileMainActivitySelf"
         android:layout_width="57dp"
         android:layout_height="51dp"

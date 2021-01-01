@@ -25,7 +25,8 @@ public class MainPage_Messages extends AppCompatActivity {
         message_mBtnLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(MainPage_Messages.this,MainPage_ConnectInstantly.class);
+                startActivity(intent);
             }
         });
         message_mBtnCardsProfile.setOnClickListener(new View.OnClickListener() {
