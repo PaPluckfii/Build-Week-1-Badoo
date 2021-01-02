@@ -13,5 +13,6 @@
     <color name="light_grey_icons">#808080</color>
     <color name="dark_grey_icons">#696969</color>
     <color name="PinkColour_UsedInMainPage_messages">#F7A6CF</color>
+    <color name="SkyBlue_color">#4DAADD</color>
 
 </resources>

@@ -3,15 +3,19 @@ package com.example.badoo_clone;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.VideoView;
 
 public class MainPage_ProfileView extends AppCompatActivity {
 
-    private Button profileView_mBtnMessages;
-    private Button profileView_mBtnMyProfile;
-    private Button profileView_mBtnLocation;
+    private ImageButton profileView_mBtnMessages;
+    private ImageButton profileView_mBtnMyProfile;
+    private ImageButton profileView_mBtnLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

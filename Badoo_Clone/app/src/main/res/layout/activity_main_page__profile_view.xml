@@ -15,112 +15,204 @@
         android:layout_marginTop="@dimen/dp_15"
         android:src="@drawable/logo_badoo_purple" />
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@id/profileView_ivBadooLogo">
+    <Button
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/ic_baseline_filter_list_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/profileView_ivBadooLogo"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_below="@id/profileView_ivBadooLogo"
+        app:cardElevation="@dimen/dp_6">
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/trail_profile_pic"
-                android:scaleType="centerCrop" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_10"
-                android:weightSum="3">
-
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Single" />
-
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Non-smoker" />
-
-                <TextView
-                    style="@style/profileView_tabs"
-                    android:text="English" />
-
-            </LinearLayout>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_10"
-                android:weightSum="3">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="800dp"
+                    android:background="@drawable/profile_view_3"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:weightSum="3">
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Single" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Non-smoker" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="English" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:weightSum="3">
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Hindi" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="170cm" />
+
+                    <TextView
+                        style="@style/profileView_tabs"
+                        android:text="Music" />
+
+                </LinearLayout>
 
                 <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Hindi" />
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I'm here..."/>
 
                 <TextView
-                    style="@style/profileView_tabs"
-                    android:text="170cm" />
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To chan and meet new people"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_20"/>
+
+                <ImageView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="600dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/trail_profile_pic" />
 
                 <TextView
-                    style="@style/profileView_tabs"
-                    android:text="Music" />
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What makes you laugh?"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Memes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What kind of music do you like to listen to?"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I have a wide range of taste"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Location"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="~12 km away"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_20"/>
+
+                <ImageView
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_300"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_view_1" />
+
+                <ImageView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_view_2" />
 
             </LinearLayout>
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/trail_profile_pic" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/trail_profile_pic" />
-
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/trail_profile_pic" />
-
-        </LinearLayout>
-    </ScrollView>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:id="@+id/profileView_llLikeDislikeIcons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:elevation="@dimen/dp_25"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/dp_100">
 
-        <Button
+        <ImageButton
             android:id="@+id/profileView_btnCancel"
-            android:layout_width="@dimen/dp_80"
-            android:layout_height="@dimen/dp_80"
-            android:layout_marginRight="@dimen/dp_30"
-            android:background="@drawable/cancel_icon_circular" />
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@drawable/cancel_icon_circular"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/profileView_btnLike"
-            android:layout_width="@dimen/dp_80"
-            android:layout_height="@dimen/dp_80"
-            android:background="@drawable/like_heart_icon_circular" />
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@drawable/like_heart_icon_circular"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
+        android:elevation="@dimen/dp_20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/profileView_llLikeDislikeIcons"
-        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -162,63 +254,52 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/profileView_llBottomIcons"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_60"
         android:layout_alignParentBottom="true"
+        android:background="@color/background_grey"
         android:weightSum="4">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnLocation"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/ic_location_grey" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/ic_location_grey"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnCardsProfile"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/cards_profile_purple" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/cards_profile_purple"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnMessages"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/messenger_icon_grey" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/messenger_icon_grey"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
+            <ImageButton
                 android:id="@+id/profileView_btnMyProfile"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
                 android:layout_gravity="center"
-                android:background="@drawable/user_profile_icon_grey" />
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/user_profile_icon_grey"
+                android:layout_weight="1"
+                android:background="@color/background_grey"
+                android:scaleType="fitCenter"/>
 
     </LinearLayout>
 
