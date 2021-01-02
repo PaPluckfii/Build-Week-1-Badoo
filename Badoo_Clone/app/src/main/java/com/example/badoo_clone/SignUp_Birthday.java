@@ -51,15 +51,15 @@ public class SignUp_Birthday extends AppCompatActivity {
     }
     private boolean isCredentialsValid(){
         boolean isDataValid=true;
-        if(signUpBirthday_mEtDay.getText().toString().isEmpty() || signUpBirthday_mEtDay.getText().toString().length()<2){
+        if(signUpBirthday_mEtDay.getText().toString().isEmpty() || signUpBirthday_mEtDay.getText().toString().length()!=2){
             signUpBirthday_mEtDay.setError("invalid date");
             isDataValid=false;
         }
-        if(signUpBirthday_mEtMonth.getText().toString().isEmpty() || signUpBirthday_mEtMonth.getText().toString().length()<2) {
+        if(signUpBirthday_mEtMonth.getText().toString().isEmpty() || signUpBirthday_mEtMonth.getText().toString().length()!=2) {
             signUpBirthday_mEtMonth.setError("invalid month");
             isDataValid = false;
         }
-                if (signUpBirthday_mEtYear.getText().toString().isEmpty() || signUpBirthday_mEtYear.getText().toString().length()<4) {
+                if (signUpBirthday_mEtYear.getText().toString().isEmpty() || signUpBirthday_mEtYear.getText().toString().length()!=4) {
                     signUpBirthday_mEtYear.setError("invalid year");
                     isDataValid = false;
                 }
