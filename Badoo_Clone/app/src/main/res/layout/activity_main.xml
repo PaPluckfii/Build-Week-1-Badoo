@@ -7,16 +7,13 @@
     tools:context=".MainActivity"
     android:background="@color/background_grey">
 
-    <TextView
-        android:id="@+id/mainActivity_tvBadooLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/comfortaa"
-        android:includeFontPadding="true"
-        android:text="@string/app_name_Only_Badoo"
-        android:textColor="@color/theme_purple"
-        android:textSize="@dimen/sp_30"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/mainActivity_ivBadooLogo"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_badoo_purple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainPage_Messages extends AppCompatActivity {
 
-    private Button message_mBtnLocation;
-    private Button message_mBtnCardsProfile;
-    private Button message_mBtnMyProfile;
+    private ImageButton message_mBtnLocation;
+    private ImageButton message_mBtnCardsProfile;
+    private ImageButton message_mBtnMyProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

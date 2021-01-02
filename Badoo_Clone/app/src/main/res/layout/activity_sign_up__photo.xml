@@ -10,219 +10,180 @@
         android:id="@+id/iv_Logo_Badoo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo_badoo_txt"
-        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/dp_10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:padding="@dimen/dp_10"/>
+        app:srcCompat="@drawable/logo_badoo_txt" />
 
     <TextView
         android:id="@+id/photo_ShadowUnderline"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo"
-        android:background="@color/background_grey"
         android:layout_marginTop="@dimen/dp_5"
-        />
+        android:background="@color/background_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_Logo_Badoo" />
+
     <TextView
         android:id="@+id/signUpName_tvRegisterUsingFacebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="@string/register_using_facebook"
-        android:textSize="@dimen/sp_15"
-        android:textColor="@color/theme_purple"
         android:layout_marginBottom="@dimen/dp_20"
-        />
+        android:text="@string/register_using_facebook"
+        android:textColor="@color/theme_purple"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/signUpPhoto_btnContinue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/signUpName_tvRegisterUsingFacebook"
-        android:background="@drawable/rectangle_purple"
-        android:text="@string/Continue"
-        android:textColor="@color/white"
         android:layout_marginStart="@dimen/dp_20"
         android:layout_marginEnd="@dimen/dp_20"
         android:layout_marginBottom="@dimen/dp_10"
-        />
+        android:background="@drawable/rectangle_purple"
+        android:text="@string/Continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/signUpName_tvRegisterUsingFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/photo_tvGreat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photo_ShadowUnderline"
-        android:text="@string/great_choice"
-        android:textSize="@dimen/sp_25"
-        android:textColor="@color/black"
         android:layout_marginTop="@dimen/dp_10"
-        />
+        android:text="@string/great_choice"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photo_ShadowUnderline" />
+
     <TextView
         android:id="@+id/photo_tvMorePhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvGreat"
         android:text="@string/the_more_photo"
-        android:textSize="@dimen/sp_25"
         android:textColor="@color/black"
-        />
+        android:textSize="@dimen/sp_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photo_tvGreat" />
+
     <TextView
         android:id="@+id/photo_tvbetter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvMorePhoto"
         android:text="@string/the_better"
-        android:textSize="@dimen/sp_25"
         android:textColor="@color/black"
-        />
-
-    <TextView
-        android:id="@+id/photo_tvPlus1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_white"
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/photo_tvPlus7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvbetter"
-        app:layout_constraintEnd_toStartOf="@id/photo_tvPlus2"
-        />
-    <TextView
-        android:id="@+id/photo_tvPlus2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_white"
-
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/photo_tvPlus8"
-        app:layout_constraintStart_toEndOf="@+id/photo_tvPlus1"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvbetter"
-        app:layout_constraintEnd_toStartOf="@id/photo_tvPlus3"
-        />
-    <TextView
-        android:id="@+id/photo_tvPlus3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_white"
-
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/photo_tvPlus9"
-        app:layout_constraintStart_toEndOf="@id/photo_tvPlus2"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvbetter"
+        android:textSize="@dimen/sp_25"
         app:layout_constraintEnd_toEndOf="parent"
-        />
-    <TextView
-        android:id="@+id/photo_tvPlus4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_white"
-
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/signUpPhoto_btnContinue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvPlus7"
-        app:layout_constraintEnd_toStartOf="@id/photo_tvPlus2"
-        />
-    <TextView
-        android:id="@+id/photo_tvPlus5"
+        app:layout_constraintTop_toBottomOf="@id/photo_tvMorePhoto" />
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/square_white"
-
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/signUpPhoto_btnContinue"
-        app:layout_constraintStart_toEndOf="@id/photo_tvPlus4"
-        app:layout_constraintEnd_toStartOf="@+id/photo_tvPlus6"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvPlus8"
-        />
-    <TextView
-        android:id="@+id/photo_tvPlus6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_white"
-
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/signUpPhoto_btnContinue"
-        app:layout_constraintStart_toEndOf="@id/photo_tvPlus2"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvPlus9"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
 
-        />
-
-    <TextView
-        android:id="@+id/photo_tvPlus7"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/square_white"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
 
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/photo_tvPlus4"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_white"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvPlus1"
-        app:layout_constraintEnd_toStartOf="@id/photo_tvPlus2"
-        />
-    <TextView
-        android:id="@+id/photo_tvPlus8"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:background="@drawable/square_white"
-
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/photo_tvPlus5"
-        app:layout_constraintStart_toEndOf="@id/photo_tvPlus7"
-        app:layout_constraintEnd_toStartOf="@+id/photo_tvPlus6"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvPlus2"
-        />
-    <TextView
-        android:id="@+id/photo_tvPlus9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/square_white"
-
-        android:paddingStart="@dimen/dp_40"
-        android:paddingEnd="@dimen/dp_40"
-        android:paddingTop="@dimen/dp_40"
-        android:paddingBottom="@dimen/dp_10"
-        app:layout_constraintBottom_toTopOf="@id/photo_tvPlus6"
-        app:layout_constraintStart_toEndOf="@id/photo_tvPlus2"
-        app:layout_constraintTop_toBottomOf="@id/photo_tvPlus3"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-        />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/square_white"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_white"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/square_white"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo_tvbetter" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_white"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/square_white"
+        android:padding="@dimen/dp_25"
+        android:src="@drawable/ic_add_cross_grey"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

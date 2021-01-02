@@ -204,63 +204,53 @@
         />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/message_llBottomIcons"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_60"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:weightSum="4">
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_grey"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/message_btnLocation"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/background_grey"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_location_grey" />
 
-            <Button
-                android:id="@+id/message_btnLocation"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_location_grey" />
-        </androidx.cardview.widget.CardView>
+        <ImageButton
+            android:id="@+id/message_btnCardsProfile"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/background_grey"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cards_profile_grey" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/message_btnMessages"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/background_grey"
+            android:scaleType="fitCenter"
+            android:src="@drawable/messenger_icon_purple" />
 
-            <Button
-                android:id="@+id/message_btnCardsProfile"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
-                android:layout_gravity="center"
-                android:background="@drawable/cards_profile_grey" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/message_btnMessages"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
-                android:layout_gravity="center"
-                android:background="@drawable/messenger_icon_purple" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:id="@+id/message_btnMyProfile"
-                android:layout_width="@dimen/dp_40"
-                android:layout_height="@dimen/dp_40"
-                android:layout_gravity="center"
-                android:background="@drawable/user_profile_icon_grey" />
-        </androidx.cardview.widget.CardView>
+        <ImageButton
+            android:id="@+id/message_btnMyProfile"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/background_grey"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_profile_icon_grey" />
 
     </LinearLayout>
 

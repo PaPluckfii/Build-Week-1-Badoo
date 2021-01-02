@@ -66,7 +66,7 @@
     <string name="picture_time">Picture time!</string>
     <string name="need_a_photo">You need a photo to use </string>
     <string name="badoo_text">Badoo</string>
-    <string name="Upload_photo">Upload photo</string>
+    <string name="Upload_photo">Upload Photo</string>
 
     <string name="almost_there">Almost there!</string>
     <string name="set_password">Just set a password</string>
@@ -96,7 +96,7 @@
     <string name="complete">People who complete their profiles get more matches!</string>
     <string name="txt_StandOutonBadoo">Stand out on Badoo</string>
     <string name="txt_SaveOnPremium">Save on Premium</string>
-    <string name="txt_GetDiscountOnPremium">Try before you buy when you sign up today.</string>
+
     <string name="btnText_GetPremium">Get Premium</string>
     <string name="txtGetPhotoVerified">Get Photo Verified</string>
     <string name="txtLetPeopleKnow_TheyCanTrustYou">Let people know they can trust you.</string>
